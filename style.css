@@ -1,0 +1,158 @@
+
+/**                     STATIC PAGE             */  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    padding: 1rem 0;
+    font-size: 35px;
+    background-color: crimson;
+    color: white;
+}
+header > div > h1{
+    text-align: center;
+}
+#add{
+    border-radius: 50%;
+    padding: 10px 15px;
+    border: none;
+    font-size: 15px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+main{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+/*                      POPUP MODAL                 */  
+.modal{
+    display: none;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    height: 300px;
+    width: 250px;
+    font-size: 17px;
+    position: absolute;
+    margin: auto;
+    top: 20%;
+    left: 41%;
+    border: 1px solid black;
+}
+form label{
+    display: block;
+    font-size: 25px;
+    margin: 15px 0 5px 10px;
+}
+form input[type="text"]{
+    width: 90%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    padding: 0 5px;
+    margin-left: 10px;
+}
+.readContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+.readContainer input{
+    margin-top: 10px;
+}
+.done{
+    width: 100%;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    border: none;
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.done:hover{
+    text-shadow: 0 3px 3px black;
+    margin-bottom: 5px;
+}
+.done:active{
+    margin-bottom: 0;
+    text-shadow: none;
+}
+
+/*                      DYNAMICALLY ADDED/CARDS/DIVS ADDED VIA JAVASCRIPT               */
+.cardModal{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    line-height: 1.5;
+}
+.xbtnContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -16px;
+}
+.xbtn{
+    color: crimson;
+    font-weight: bold;
+    font-size: 23px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.xbtn:hover{
+    text-shadow: 0 3px 5px black;
+    margin-top: -5px;
+}
+.xbtn:active{
+    text-shadow: 0 1px 3px black;
+    margin-top: 0;
+    transform: rotate(360deg);
+}
+.changeReadStatus{
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.changeReadStatus:hover{
+    text-shadow: 0 3px 3px black;
+    margin-top: -3px;
+}
+.changeReadStatus:active{
+    margin-top: 10px;
+    text-shadow: none;
+}
